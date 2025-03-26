@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/id/thumb/d/d1/Smkn1bwi.jpg/800px-Smkn1bwi.jpg" width="110" height="100">
+        <h2>Formulir Pendaftaran Organisasi & Ekstrakurikuler</h2>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Informasi Pribadi</legend>
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" name="nama" id="nama"><br>
+                <label for="kelas">Kelas</label>
+                <select name="kelas" id="kelas">
+                    <option value="1">X PPLG 1</option>
+                    <option value="2">X PPLG 2</option>
+                    <option value="3">X TJKT 1</option>
+                    <option value="4">X T 2</option>
+                    <option value="5">X DKV 1</option>
+                    <option value="6">X DKV 2</option>
+                    <option value="7">X ST</option>
+                    <option value="8">X AKL 1</option>
+                    <option value="9">X AKL 2</option>
+                    <option value="10">X AKL 3</option>
+                    <option value="11">X MPLB 1</option>
+                    <option value="12">X MPLB 2</option>
+                    <option value="13">X APH 1</option>
+                    <option value="14">X APH 2</option>
+                    <option value="15">X APH 3</option>
+                    <option value="16">X PM 1</option>
+                    <option value="17">X PM 2</option>
+                    <option value="18">X BDP 1</option>
+                    <option value="19">X BDP 2</option>
+                </select>
+                <br>
+                <label for="NIS">Nomor Induk Siswa (NIS)</label>
+                <input type="text" name="NIS" id="NIS">
+                <br>
+                <label for="Tanggallahir">Tanggal Lahir</label>
+                <input type="date" id="start" name="Tanggallahir" value="2006-01-01" min="2006-01-01" max="2008-12-31">
+                <br>
+                <label for="JenisKelamin">Jenis Kelamin</label>
+                <br>
+                <input type="radio" name="JenisKelamin" id="laki">
+                <label for="laki">Laki-Laki</label>
+                <input type="radio" name="JenisKelamin" id="perempuan">
+                <label for="perempuan">Perempuan</label>
+                <br>
+                <label for="telpon">No. Telepon</label>
+                <input type="text" name="telpon" id="telpon">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Pilihan Organisasi & Ekstrakurikuler</legend>
+                <label for="Ekstra">Pilih Organisasi/Ekstrakurikuler</label>
+                <br>
+                <select multiple name="Ekstra" id="Ekstra">
+                    <option value="osis">Osis</option>
+                    <option value="DA">Dewan Ambalan</option>
+                    <option value="PA">Pecinta Alam</option>
+                    <option value="RMA">Remas Al-Kautsar</option>
+                    <option value="UKS">UKS/PMR</option>
+                    <option value="Teater">Teater Kusuma</option>
+                    <option value="GDS">Gerakan Disiplin Sekolah</option>
+                    <option value="LH">Laskar Hijau</option>
+                    <option value="Basket">Basket</option>
+                    <option value="Voli">Voli</option>
+                    <option value="Futsal">Futsal</option>
+                </select>
+                <br>
+                <label for="alasan">Alasan memilih Organisasi/Ekstrakurikuler tersebut</label>
+                <br>
+                <textarea name="alasan" id="alasan" cols="60" rows="6"></textarea>
+                <br>
+                <label>Apakah Anda pernah mengikuti kegiatan ekstrakurikuler sebelumnya?</label>
+                <br>
+                <input type="checkbox" name="pengalaman" id="osis" value="osis">
+                <label for="osis">Osis</label>
+                <input type="checkbox" name="pengalaman" id="pramuka" value="pramuka">
+                <label for="pramuka"> Pramuka</label>
+                <input type="checkbox" name="pengalaman" id="basket" value="basket">
+                <label for="basket">Basket</label>
+                <input type="checkbox" name="pengalaman" id="pmr" value="pmr"> 
+                <label for="pmr">PMR</label>
+                <input type="checkbox" name="pengalaman" id="lainnya" value="lainnya">
+                <label for="lainnya">Lainnya</label>
+                <br>
+            </fieldset>
+            
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
