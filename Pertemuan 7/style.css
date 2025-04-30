@@ -1,0 +1,186 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f2;
+    color: #444;
+  }
+  
+  header {
+    text-align: center;
+    padding: 40px 20px 20px;
+    background-color: #ffe9e3;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    color: #d85d64;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #ffd6cd;
+    gap: 40px;
+    padding: 15px 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #271d1d;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: color 0.3s;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #d85d64;
+    color: #271d1d;
+    transform: scale(1.05);
+  }
+  
+  .box {
+    background-color: #fff;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 900px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .box:hover {
+    transform: translateY(-4px);
+  }
+  
+  .recipes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .recipe-box {
+    background-color: #fff6f3;
+    width: calc(33.333% - 30px);
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .recipe-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .recipe-box img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-box h3 {
+    margin-top: 10px;
+    color: #b9474d;
+  }
+  
+  .recipe-box p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .recipe-box button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #ffa7a7;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .recipe-box button:hover {
+    background-color: #ff8585;
+  }
+  
+  .kontak-box form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .kontak-box form label {
+    margin-bottom: 15px;
+  } 
+
+  .kontak-box textarea {
+    resize: vertical;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 12px;
+    font-family: inherit;
+    font-size: 1rem;
+  }
+  
+  .kontak-box button.kirim {
+    padding: 10px;
+    border: none;
+    background-color: #ff9999;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .kontak-box button.kirim:hover {
+    background-color: #ff7a7a;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #ffe0db;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  @media (max-width: 900px) {
+    .recipe-box {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .recipe-box {
+      width: 100%;
+    }
+  
+    .box {
+      margin: 20px;
+      padding: 20px;
+    }
+  }
+  
